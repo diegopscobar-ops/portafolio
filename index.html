@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Caldera | Dev Junior Frontend</title>
+
+  <meta name="description" content="Portafolio de Diego Caldera Escobar, desarrollador frontend junior de Medellín. HTML, CSS, JavaScript, Supabase.">
+  <meta name="keywords" content="Diego Caldera, desarrollador frontend, junior, Medellín, Colombia, HTML, CSS, JavaScript, Supabase, Vercel">
+  <meta name="author" content="Diego Caldera Escobar">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Diego Caldera | Dev Junior Frontend">
+  <meta property="og:description" content="Desarrollador frontend junior de 18 años, Medellín. Construyo interfaces desde cero con HTML, CSS y JavaScript.">
+  <meta property="og:image" content="https://portafolio-pink-pi.vercel.app/images/portafolio.jpeg">
+  <meta property="og:url" content="https://portafolio-pink-pi.vercel.app">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diego Caldera | Dev Junior Frontend">
+  <meta name="twitter:description" content="Desarrollador frontend junior de 18 años, Medellín.">
+  <meta name="twitter:image" content="https://portafolio-pink-pi.vercel.app/images/portafolio.jpeg">
+  <meta name="twitter:url" content="https://portafolio-pink-pi.vercel.app">
+
+  <link rel="canonical" href="https://portafolio-pink-pi.vercel.app">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Foldit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-texto">
+    <span class="letra-grande">D</span>
+    <i class="fa-solid fa-dna"></i>
+  </div>
+  <div class="loader-barra">
+    <div class="loader-fill"></div>
+  </div>
+</div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header>
+    <nav>
+      <h1 class="titulo">Diego Caldera</h1>
+      <ul id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Perfil</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="hamburguesa" id="hamburguesa">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a href="https://wa.me/573025449170" target="_blank" rel="noopener noreferrer">
+        <button class="bnt">Contactar <i class="fa-solid fa-mobile-screen"></i></button>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="fade-in">
+      <canvas id="hero-canvas"></canvas>
+      <div class="contenido-inicio">
+        <div class="bage">
+          <span class="dot"></span>
+          Disponible para proyectos
+        </div>
+        <h2>Frontend <em>Developer</em></h2>
+        <p>Construyo interfaces web modernas y rápidas con HTML, CSS y JavaScript. Páginas para negocios, apps con base de datos en tiempo real y diseño responsive desde cero.</p>
+        <a href="HDV DIEGO CALDERA ESCOBAR.pdf" download>
+          <button class="bnt-cv"><i class="fas fa-download"></i> Descargar CV</button>
+        </a>
+      </div>
+      <div class="spline-container">
+        <iframe src='https://my.spline.design/robotfollowcursorforlandingpagemc-ds76XY5y4d3rShBsKvTDvxW3/' frameborder='0' width='100%' height='100%'></iframe>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="fade-in">
+      <div class="foto">
+        <img class="fotito" src="images/portafolio.jpeg" alt="Diego Caldera Escobar - Desarrollador Frontend Junior Medellín">
+      </div>
+      <div class="texto">
+        <h2>Diego Caldera <span>Escobar</span></h2>
+        <div class="info">
+          <span>18 años</span>
+          <span>Medellín, Colombia</span>
+          <span>Estudiando: Desarrollo y análisis de Software</span>
+        </div>
+        <p>Decidí estudiar programación porque desde muy pequeño sabía lo que quería. Me apasiona aprender, construir cosas desde cero y ver cómo el código cobra vida. Hoy estoy estudiando Tecnología de SOFTWARE en el SENA y cada día me acerca más a mi meta.</p>
+      </div>
+    </section>
+
+    <section id="stack" class="fade-in">
+      <div class="stack-header">
+        <h2 class="stack-titulo">Mi Stack</h2>
+        <p class="stack-sub">Tecnologías que uso para construir proyectos</p>
+      </div>
+      <div class="stack-categoria">
+        <span class="categoria-label">Frontend</span>
+        <div class="stack-grid">
+          <div class="tech" data-color="#e34f26" data-progress="80">
+            <img src="images/html-5-svgrepo-com.svg" alt="HTML">
+            <span>HTML</span><small>Avanzado</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+          <div class="tech" data-color="#1572b6" data-progress="50">
+            <img src="images/css-3-svgrepo-com.svg" alt="CSS">
+            <span>CSS</span><small>Intermedio</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+          <div class="tech" data-color="#f7df1e" data-progress="50">
+            <img src="images/js-svgrepo-com.svg" alt="JavaScript">
+            <span>JavaScript</span><small>Intermedio</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+        </div>
+      </div>
+      <div class="stack-categoria">
+        <span class="categoria-label">Herramientas</span>
+        <div class="stack-grid">
+          <div class="tech" data-color="#3ecf8e" data-progress="80">
+            <img src="images/supabase-icon.svg" alt="Supabase">
+            <span>Supabase</span><small>Avanzado</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+          <div class="tech" data-color="#f05032" data-progress="80">
+            <img src="images/git-svgrepo-com.svg" alt="Git">
+            <span>Git</span><small>Avanzado</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+          <div class="tech" data-color="#ffffff" data-progress="80">
+            <img src="images/vercel-fill-svgrepo-com.svg" alt="Vercel">
+            <span>Vercel</span><small>Avanzado</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+        </div>
+      </div>
+      <div class="stack-categoria">
+        <span class="categoria-label">Aprendiendo</span>
+        <div class="stack-grid">
+          <div class="tech" data-color="#61dafb" data-progress="20">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span>React</span><small>Iniciando</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+          <div class="tech" data-color="#38bdf8" data-progress="30">
+            <img src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000" alt="Tailwind">
+            <span>Tailwind</span><small>Iniciando</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+          <div class="tech" data-color="#68a063" data-progress="25">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+            <span>Node.js</span><small>Iniciando</small>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <div class="bar-percent">0%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="fade-in">
+      <h2>Proyectos</h2>
+      <p>Algunos de los proyectos donde muestro mis habilidades en desarrollo web</p>
+      <div class="contenedor-proyecto">
+
+        <div class="proyecto-scene fade-in">
+          <div class="proyecto-card">
+            <div class="card-tag"><span class="card-tag-dot"></span> Destacado</div>
+            <div class="proyecto-img"><img src="images/principal.jpeg" alt="Sinfonía de Sabores Fruit"></div>
+            <div class="proyecto-info">
+              <h3>Sinfonía de Sabores Fruit</h3>
+              <p>App de compra de productos digitales con domicilios y ventas físicas.</p>
+            </div>
+            <div class="tecnologias">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>Supabase</span><span>Vercel</span>
+            </div>
+          </div>
+          <div class="connector-shadow"></div>
+          <div class="card-small">
+            <div class="mini-label">Proyecto</div>
+            <div class="card-small-divider"></div>
+            <div class="card-small-btns">
+              <a href="https://sinfonia-de-sabores-fruit.vercel.app" target="_blank"><i class="fas fa-link"></i> Ver proyecto</a>
+              <a href="https://github.com/diegopscobar-ops/Sinfon-aDeSaboresFruit" target="_blank"><i class="fab fa-github"></i> Ver código</a>
+            </div>
+            <div class="card-small-divider"></div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div class="small-dot"></div>
+              <span style="font-size:0.62rem;color:rgba(255,255,255,0.35);font-family:'JetBrains Mono',monospace;letter-spacing:1px;">ACTIVO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-scene fade-in" style="transition-delay:0.15s">
+          <div class="proyecto-card">
+            <div class="card-tag"><span class="card-tag-dot"></span> Destacado</div>
+            <div class="proyecto-img"><img src="images/Screenshot 2026-03-10 at 17-56-45 BarberShop - Reserva tu Turno.png" alt="Barbershop"></div>
+            <div class="proyecto-info">
+              <h3>Barbershop</h3>
+              <p>App para barbería moderna con reservas, catálogo de servicios y gestión de clientes.</p>
+            </div>
+            <div class="tecnologias">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>Supabase</span>
+            </div>
+          </div>
+          <div class="connector-shadow"></div>
+          <div class="card-small">
+            <div class="mini-label">Proyecto</div>
+            <div class="card-small-divider"></div>
+            <div class="card-small-btns">
+              <a href="https://diegopscobar-ops.github.io/shoopbarber/index%20(1).html" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> Ver proyecto</a>
+              <a href="https://github.com/diegopscobar-ops/shoopbarber" target="_blank"><i class="fab fa-github"></i> Ver código</a>
+            </div>
+            <div class="card-small-divider"></div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div class="small-dot"></div>
+              <span style="font-size:0.62rem;color:rgba(255,255,255,0.35);font-family:'JetBrains Mono',monospace;letter-spacing:1px;">ACTIVO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-scene fade-in" style="transition-delay:0.3s">
+          <div class="proyecto-card">
+            <div class="card-tag"><span class="card-tag-dot" style="background:#f0e040;box-shadow:0 0 6px rgba(240,224,64,0.5);"></span> En progreso</div>
+            <div class="proyecto-img"><img src="images/taskflow.jpeg" alt="TaskFlow"></div>
+            <div class="proyecto-info">
+              <h3>TaskFlow</h3>
+              <p>App de gestión de tareas con tablero kanban por estados y prioridades en tiempo real.</p>
+            </div>
+            <div class="tecnologias">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>Supabase</span>
+            </div>
+          </div>
+          <div class="connector-shadow"></div>
+          <div class="card-small">
+            <div class="mini-label">Proyecto</div>
+            <div class="card-small-divider"></div>
+            <div style="padding:8px 4px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;">
+              <span style="font-size:0.6rem;font-family:'JetBrains Mono',monospace;color:rgba(240,224,64,0.5);letter-spacing:1px;text-transform:uppercase;">Próximamente</span>
+              <span style="font-size:0.58rem;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.2);letter-spacing:0.5px;line-height:1.5;">En desarrollo activo</span>
+            </div>
+            <div class="card-small-divider"></div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div class="small-dot" style="background:#f0e040;box-shadow:0 0 8px rgba(240,224,64,0.6);animation:pulse 1.5s infinite;"></div>
+              <span style="font-size:0.62rem;color:rgba(255,255,255,0.35);font-family:'JetBrains Mono',monospace;letter-spacing:1px;">EN PROGRESO</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="cv" class="fade-in">
+      <div class="cv-header">
+        <h2 class="cv-titulo">Currículum</h2>
+        <p class="cv-sub">Experiencia y datos de contacto</p>
+      </div>
+      <div class="cv-grid">
+        <div class="cv-left">
+          <div class="cv-bloque">
+            <span class="cv-label">Contacto</span>
+            <ul class="cv-list">
+              <li><i class="fas fa-phone"></i> 302 544 9170</li>
+              <li><i class="fas fa-envelope"></i> diegopscobar@gmail.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Medellín, Colombia</li>
+              <li><i class="fas fa-globe"></i><a href="https://portafolio-pink-pi.vercel.app" target="_blank" rel="noopener noreferrer">portafolio-pink-pi.vercel.app</a></li>
+              <li><i class="fab fa-github"></i><a href="https://github.com/diegopscobar-ops" target="_blank" rel="noopener noreferrer">github.com/diegopscobar-ops</a></li>
+            </ul>
+          </div>
+          <div class="cv-bloque">
+            <span class="cv-label">Formación</span>
+            <div class="cv-item">
+              <p class="cv-item-titulo">Tecnología en Desarrollo y Análisis de Software</p>
+              <p class="cv-item-lugar">SENA — En curso</p>
+            </div>
+          </div>
+          <div class="cv-bloque">
+            <span class="cv-label">Habilidades</span>
+            <div class="cv-skills">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>Supabase</span><span>Git</span><span>Vercel</span>
+              <span>Responsive Design</span><span>UI / Frontend</span>
+              <span>React</span><span>Tailwind</span>
+            </div>
+          </div>
+        </div>
+        <div class="cv-right">
+          <div class="cv-bloque">
+            <span class="cv-label">Sobre mí</span>
+            <p class="cv-bio">Desarrollador frontend de 18 años, Medellín. Construyo interfaces modernas desde cero — páginas para negocios, apps con Supabase y diseño responsive adaptado a móvil. En constante formación en el SENA y listo para aportar en proyectos reales.</p>
+          </div>
+          <div class="cv-bloque">
+            <span class="cv-label">Experiencia</span>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <p class="cv-item-titulo">Proyecto independiente — Desarrollo web</p>
+                <span class="cv-item-fecha">3 meses</span>
+              </div>
+              <ul class="cv-item-lista">
+                <li>Desarrollo de páginas web con HTML, CSS y JavaScript</li>
+                <li>Integración de base de datos con Supabase</li>
+                <li>Deploy y gestión de proyectos en Vercel</li>
+                <li>Diseño responsive adaptado a móvil</li>
+              </ul>
+            </div>
+            <div class="cv-item" style="margin-top:20px;">
+              <div class="cv-item-header">
+                <p class="cv-item-titulo">Proyectos destacados</p>
+              </div>
+              <ul class="cv-item-lista">
+                <li><strong>Sinfonía de Sabores Fruit</strong> — App de compras con domicilios y ventas físicas <a href="https://sinfonia-de-sabores-fruit.vercel.app" target="_blank" class="cv-link">ver →</a></li>
+                <li><strong>Barbershop</strong> — Reservas online, catálogo y gestión de clientes <a href="https://diegopscobar-ops.github.io/shoopbarber/index%20(1).html" target="_blank" class="cv-link">ver →</a></li>
+                <li><strong>TaskFlow</strong> — Tablero Kanban con prioridades en tiempo real <span class="cv-tag-wip">en progreso</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cv-footer-btn">
+        <a href="HDV DIEGO CALDERA ESCOBAR.pdf" download>
+          <button class="bnt-cv"><i class="fas fa-download"></i> Descargar CV en PDF</button>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contacto">
+    <h2 class="footer-titulo">¿Hablamos?</h2>
+    <p class="footer-sub">Disponible para proyectos y oportunidades</p>
+    <div class="footer-links">
+      <a href="https://wa.me/573025449170" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+      <a href="https://github.com/diegopscobar-ops" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:diegopscobar@gmail.com"><i class="fas fa-envelope"></i> Correo</a>
+      <a href="https://portafolio-pink-pi.vercel.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Portafolio</a>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="tecnot1">
+        <p><i class="fa-solid fa-bolt"></i> Hecho solo con</p>
+        <div class="tecnot">
+          <span class="tecnot2"><i class="fa-brands fa-html5"></i> HTML</span>
+          <span class="tecnot2"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span class="tecnot2"><i class="fa-brands fa-js"></i> JS</span>
+          <span class="tecnot2"><i class="fa-brands fa-git-alt"></i> GIT</span>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2025 Diego Caldera Escobar — Medellín, Colombia</p>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
