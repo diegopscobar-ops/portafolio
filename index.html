@@ -30,7 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Foldit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.v2.css">
 </head>
 <body>
 
@@ -78,7 +78,7 @@
         </div>
         <h2>Frontend <em>Developer</em></h2>
         <p>Construyo interfaces web modernas y rápidas con HTML, CSS y JavaScript. Páginas para negocios, apps con base de datos en tiempo real y diseño responsive desde cero.</p>
-        <a href="HDV DIEGO CALDERA ESCOBAR.pdf" download>
+        <a href="HOJADEVIDA_editable.odt" download>
           <button class="bnt-cv"><i class="fas fa-download"></i> Descargar CV</button>
         </a>
       </div>
@@ -88,9 +88,7 @@
     </section>
 
     <section id="sobre-mi" class="fade-in">
-      <div class="foto">
-        <img class="fotito" src="images/portafolio.jpeg" alt="Diego Caldera Escobar - Desarrollador Frontend Junior Medellín">
-      </div>
+
       <div class="texto">
         <h2>Diego Caldera <span>Escobar</span></h2>
         <div class="info">
@@ -107,6 +105,7 @@
         <h2 class="stack-titulo">Mi Stack</h2>
         <p class="stack-sub">Tecnologías que uso para construir proyectos</p>
       </div>
+
       <div class="stack-categoria">
         <span class="categoria-label">Frontend</span>
         <div class="stack-grid">
@@ -130,6 +129,7 @@
           </div>
         </div>
       </div>
+
       <div class="stack-categoria">
         <span class="categoria-label">Herramientas</span>
         <div class="stack-grid">
@@ -153,6 +153,7 @@
           </div>
         </div>
       </div>
+
       <div class="stack-categoria">
         <span class="categoria-label">Aprendiendo</span>
         <div class="stack-grid">
@@ -186,7 +187,9 @@
         <div class="proyecto-scene fade-in">
           <div class="proyecto-card">
             <div class="card-tag"><span class="card-tag-dot"></span> Destacado</div>
-            <div class="proyecto-img"><img src="images/principal.jpeg" alt="Sinfonía de Sabores Fruit"></div>
+            <div class="proyecto-img">
+              <img src="images/principal.jpeg" alt="Sinfonía de Sabores Fruit">
+            </div>
             <div class="proyecto-info">
               <h3>Sinfonía de Sabores Fruit</h3>
               <p>App de compra de productos digitales con domicilios y ventas físicas.</p>
@@ -204,17 +207,19 @@
               <a href="https://github.com/diegopscobar-ops/Sinfon-aDeSaboresFruit" target="_blank"><i class="fab fa-github"></i> Ver código</a>
             </div>
             <div class="card-small-divider"></div>
-            <div style="display:flex;align-items:center;gap:8px;">
+            <div class="card-small-estado">
               <div class="small-dot"></div>
-              <span style="font-size:0.62rem;color:rgba(255,255,255,0.35);font-family:'JetBrains Mono',monospace;letter-spacing:1px;">ACTIVO</span>
+              <span class="estado-label">ACTIVO</span>
             </div>
           </div>
         </div>
 
-        <div class="proyecto-scene fade-in" style="transition-delay:0.15s">
+        <div class="proyecto-scene fade-in proyecto-scene--delay-1">
           <div class="proyecto-card">
             <div class="card-tag"><span class="card-tag-dot"></span> Destacado</div>
-            <div class="proyecto-img"><img src="images/Screenshot 2026-03-10 at 17-56-45 BarberShop - Reserva tu Turno.png" alt="Barbershop"></div>
+            <div class="proyecto-img">
+              <img src="images/Screenshot 2026-03-10 at 17-56-45 BarberShop - Reserva tu Turno.png" alt="Barbershop">
+            </div>
             <div class="proyecto-info">
               <h3>Barbershop</h3>
               <p>App para barbería moderna con reservas, catálogo de servicios y gestión de clientes.</p>
@@ -232,17 +237,19 @@
               <a href="https://github.com/diegopscobar-ops/shoopbarber" target="_blank"><i class="fab fa-github"></i> Ver código</a>
             </div>
             <div class="card-small-divider"></div>
-            <div style="display:flex;align-items:center;gap:8px;">
+            <div class="card-small-estado">
               <div class="small-dot"></div>
-              <span style="font-size:0.62rem;color:rgba(255,255,255,0.35);font-family:'JetBrains Mono',monospace;letter-spacing:1px;">ACTIVO</span>
+              <span class="estado-label">ACTIVO</span>
             </div>
           </div>
         </div>
 
-        <div class="proyecto-scene fade-in" style="transition-delay:0.3s">
+        <div class="proyecto-scene fade-in proyecto-scene--delay-2">
           <div class="proyecto-card">
-            <div class="card-tag"><span class="card-tag-dot" style="background:#f0e040;box-shadow:0 0 6px rgba(240,224,64,0.5);"></span> En progreso</div>
-            <div class="proyecto-img"><img src="images/taskflow.jpeg" alt="TaskFlow"></div>
+            <div class="card-tag card-tag--wip"><span class="card-tag-dot card-tag-dot--wip"></span> En progreso</div>
+            <div class="proyecto-img">
+              <img src="images/taskflow.jpeg" alt="TaskFlow">
+            </div>
             <div class="proyecto-info">
               <h3>TaskFlow</h3>
               <p>App de gestión de tareas con tablero kanban por estados y prioridades en tiempo real.</p>
@@ -255,14 +262,14 @@
           <div class="card-small">
             <div class="mini-label">Proyecto</div>
             <div class="card-small-divider"></div>
-            <div style="padding:8px 4px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;">
-              <span style="font-size:0.6rem;font-family:'JetBrains Mono',monospace;color:rgba(240,224,64,0.5);letter-spacing:1px;text-transform:uppercase;">Próximamente</span>
-              <span style="font-size:0.58rem;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.2);letter-spacing:0.5px;line-height:1.5;">En desarrollo activo</span>
+            <div class="card-small-proximamente">
+              <span class="proximamente-label">Próximamente</span>
+              <span class="proximamente-sub">En desarrollo activo</span>
             </div>
             <div class="card-small-divider"></div>
-            <div style="display:flex;align-items:center;gap:8px;">
-              <div class="small-dot" style="background:#f0e040;box-shadow:0 0 8px rgba(240,224,64,0.6);animation:pulse 1.5s infinite;"></div>
-              <span style="font-size:0.62rem;color:rgba(255,255,255,0.35);font-family:'JetBrains Mono',monospace;letter-spacing:1px;">EN PROGRESO</span>
+            <div class="card-small-estado">
+              <div class="small-dot small-dot--wip"></div>
+              <span class="estado-label">EN PROGRESO</span>
             </div>
           </div>
         </div>
@@ -323,7 +330,7 @@
                 <li>Diseño responsive adaptado a móvil</li>
               </ul>
             </div>
-            <div class="cv-item" style="margin-top:20px;">
+            <div class="cv-item cv-item--extra">
               <div class="cv-item-header">
                 <p class="cv-item-titulo">Proyectos destacados</p>
               </div>
@@ -337,7 +344,7 @@
         </div>
       </div>
       <div class="cv-footer-btn">
-        <a href="HDV DIEGO CALDERA ESCOBAR.pdf" download>
+        <a href="HOJADEVIDA_editable.odt" download>
           <button class="bnt-cv"><i class="fas fa-download"></i> Descargar CV en PDF</button>
         </a>
       </div>
